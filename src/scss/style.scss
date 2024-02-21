@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+button{
+  border:  none;
+}
 a {
   text-decoration: none;
 }
@@ -24,10 +27,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(./head.png);
+  // background-image: url(./head.png) !important;
+  background-image: url(../img/head.png);
   box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
   padding: 0 100px;
   transition: 0.6s;
+
+  & .fa-i{
+    margin-left: 5px;
+  }
 
   & .logo {
     color: #fff;
@@ -209,6 +217,39 @@ header.sticky .menu-item .sub-menu {
   border-radius: 50% !important;
   height: 30px !important;
   border: 1px solid #fff !important;
+}
+.carousel-caption{
+  right: 67% !important;
+  left: 0% !important;
+  bottom: 8.25rem !important;
+  background-color: #ffffff77;
+  backdrop-filter: blur(30px);
+  padding: 0px 62px;
+  border-radius: 50px;
+
+  & h2{
+    color: #fff;
+    font-size: 45px !important;
+    text-align: justify;
+    line-height: 71px;
+  }
+
+}
+.btn_carousel{
+  background-color: #93e5e3;
+    border-radius: 10px !important;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    padding: 16px 38px !important;
+    font-family: system-ui !important;
+    font-weight: bold;
+    transition: .4s;
+
+    &:hover{
+      background-color: rgba(227, 76, 128);
+    }
 }
 @media (max-width: 1060px) {
   header .navigation .menu {

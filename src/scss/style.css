@@ -6,6 +6,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  border: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,10 +31,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(./head.png);
+  background-image: url(../img/head.png);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   padding: 0 100px;
   transition: 0.6s;
+}
+header .fa-i {
+  margin-left: 5px;
 }
 header .logo {
   color: #fff;
@@ -194,6 +201,40 @@ header.sticky .menu-item .sub-menu {
   border-radius: 50% !important;
   height: 30px !important;
   border: 1px solid #fff !important;
+}
+
+.carousel-caption {
+  right: 67% !important;
+  left: 0% !important;
+  bottom: 8.25rem !important;
+  background-color: rgba(255, 255, 255, 0.4666666667);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 0px 62px;
+  border-radius: 50px;
+}
+.carousel-caption h2 {
+  color: #fff;
+  font-size: 45px !important;
+  text-align: justify;
+  line-height: 71px;
+}
+
+.btn_carousel {
+  background-color: #93e5e3;
+  border-radius: 10px !important;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px 38px !important;
+  font-family: system-ui !important;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.btn_carousel:hover {
+  background-color: rgb(227, 76, 128);
 }
 
 @media (max-width: 1060px) {
